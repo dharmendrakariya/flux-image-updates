@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -14,7 +13,7 @@ spec:
     spec:
       chart: minio
       version: 8.0.7
-      sourceRef: 
+      sourceRef:
         kind: HelmRepository
         name: minio-repository
         # Optional, defaults to the namespace of the HelmRelease
@@ -26,7 +25,7 @@ spec:
   values:
     image:
       repository: minio/minio
-      tag: RELEASE.2020-12-03T05-49-24Z # {"$imagepolicy": "flux-system:minio:tag"}
+      tag: RELEASE.2021-02-01T22-56-52Z # {"$imagepolicy": "flux-system:minio:tag"}
       pullPolicy: IfNotPresent
     accessKey: "qwermnbvpoiuyzxcvlkjhasdfwsxcftb"
     secretKey: "poPvfg35powe65wdv5jhQWd7wm9tfde"
