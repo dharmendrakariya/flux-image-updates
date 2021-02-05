@@ -1,0 +1,16 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1alpha1
+kind: ImagePolicy
+metadata:
+  name: minio
+  namespace: flux-system
+spec:
+  filterTags:
+    pattern: '^RELEASE\.(?P<timestamp>.*)Z$'
+    extract: '$timestamp'
+  policy:
+    alphabetical:
+      order: asc
+  imageRepositoryRef:
+    name: minio
+
