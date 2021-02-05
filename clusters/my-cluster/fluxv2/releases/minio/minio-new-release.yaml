@@ -26,7 +26,7 @@ spec:
   values:
     image:
       repository: minio/minio
-      tag: RELEASE.2020-12-03T05-49-24Z
+      tag: RELEASE.2020-12-03T05-49-24Z # {"$imagepolicy": "flux-system:minio"}
       pullPolicy: IfNotPresent
     accessKey: "qwermnbvpoiuyzxcvlkjhasdfwsxcftb"
     secretKey: "poPvfg35powe65wdv5jhQWd7wm9tfde"
