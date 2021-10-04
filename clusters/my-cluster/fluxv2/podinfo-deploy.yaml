@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: dharmendrakariya/podinfo:1.0.1
+        image: dharmendrakariya/podinfo:1.0.1 # {"$imagepolicy": "flux-system:podinfo"}
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
